@@ -94,11 +94,11 @@
 
     ORG     .HEADER+62,0
     DC.B    %00000000          ; 62         external irq source
-    ;    bit 4 ; POKEY @ $0800
-    ;    bit 3 ; YM2151 @ $0460
-    ;    bit 2 ; POKEY @ $0440
-    ;    bit 1 ; POKEY @ $0450
-    ;    bit 0 ; POKEY @ $4000
+    ;    bit 4 ; POKEY @ $0800 - $09FF
+    ;    bit 3 ; YM2151 @ $0461 - $0462
+    ;    bit 2 ; POKEY @ $0440 - $044F
+    ;    bit 1 ; POKEY @ $0450 - $045F
+    ;    bit 0 ; POKEY @ $4000 - $7FFF
 
     DC.B    %00000000          ; 63         slot passthrough device
     ;    bit 0 ; XM module
