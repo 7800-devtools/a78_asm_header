@@ -66,8 +66,8 @@
     ;    bit 0 ; POKEY @ $4000 - $7FFF
 
 
-    DC.B    1                  ; 55         controller 1 type
-    DC.B    1                  ; 56         controller 2 type
+    DC.B    1                  ; 55         controller 1 device type
+    DC.B    1                  ; 56         controller 2 device type
     ;    0 = none
     ;    1 = 7800 joystick
     ;    2 = lightgun
