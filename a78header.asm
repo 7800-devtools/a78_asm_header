@@ -82,25 +82,25 @@
     ;   11 = SNES2Atari
 
 
-    DC.B    0                  ; 57         tv type
+    DC.B    %00000000          ; 57         tv type
     ;    bit 1 ; 0:component,1:composite
     ;    bit 0 ; 0:NTSC,1:PAL
 
 
-    DC.B    0                  ; 58         save peripheral
+    DC.B    %00000000          ; 58         save peripheral
     ;    bit 1 ; SaveKey/AtariVox
     ;    bit 0 ; High Score Cart (HSC)
 
 
     ORG     .HEADER+62,0
-    DC.B    0                  ; 62         external irq source
+    DC.B    %00000000          ; 62         external irq source
     ;    bit 4 ; POKEY @ $0800
     ;    bit 3 ; YM2151 @ $0460
     ;    bit 2 ; POKEY @ $0440
     ;    bit 1 ; POKEY @ $0450
     ;    bit 0 ; POKEY @ $4000
 
-    DC.B    0                  ; 63         slot passthrough device
+    DC.B    %00000000          ; 63         slot passthrough device
     ;    bit 0 ; XM module
 
 
