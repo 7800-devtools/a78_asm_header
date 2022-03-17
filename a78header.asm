@@ -47,7 +47,7 @@
     DC.B    %00000000          ; 53         cartridge type A
     DC.B    %00000000          ; 54         cartridge type B
     ; _Cartridge Type A_
-    ;    bit 7 ; POKEY @ $0800 - $09FF
+    ;    bit 7 ; POKEY @ $0800 - $080F
     ;    bit 6 ; EXRAM/M2                   (halt banked RAM)
     ;    bit 5 ; BANKSET
     ;    bit 4 ; SOUPER
@@ -94,7 +94,7 @@
 
     ORG     .HEADER+62,0
     DC.B    %00000000          ; 62         external irq source
-    ;    bit 4 ; POKEY @ $0800 - $09FF
+    ;    bit 4 ; POKEY @ $0800 - $080F
     ;    bit 3 ; YM2151 @ $0461 - $0462
     ;    bit 2 ; POKEY @ $0440 - $044F
     ;    bit 1 ; POKEY @ $0450 - $045F
