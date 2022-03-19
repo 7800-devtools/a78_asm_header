@@ -83,25 +83,29 @@
 
 
     DC.B    %00000000          ; 57         tv type
-    ;    bit 1 ; 0:component,1:composite
-    ;    bit 0 ; 0:NTSC,1:PAL
+    ;    bits 7..2 ; reserved
+    ;    bit 1     ; 0:component,1:composite
+    ;    bit 0     ; 0:NTSC,1:PAL
 
 
     DC.B    %00000000          ; 58         save peripheral
-    ;    bit 1 ; SaveKey/AtariVox
-    ;    bit 0 ; High Score Cart (HSC)
+    ;    bits 7..2 ; reserved
+    ;    bit 1     ; SaveKey/AtariVox
+    ;    bit 0     ; High Score Cart (HSC)
 
 
     ORG     .HEADER+62,0
     DC.B    %00000000          ; 62         external irq source
-    ;    bit 4 ; POKEY @ $0800 - $080F
-    ;    bit 3 ; YM2151 @ $0461 - $0462
-    ;    bit 2 ; POKEY @ $0440 - $044F
-    ;    bit 1 ; POKEY @ $0450 - $045F
-    ;    bit 0 ; POKEY @ $4000 - $7FFF
+    ;    bits 7..5 ; reserved
+    ;    bit 4     ; POKEY @ $0800 - $080F
+    ;    bit 3     ; YM2151 @ $0461 - $0462
+    ;    bit 2     ; POKEY @ $0440 - $044F
+    ;    bit 1     ; POKEY @ $0450 - $045F
+    ;    bit 0     ; POKEY @ $4000 - $7FFF
 
     DC.B    %00000000          ; 63         slot passthrough device
-    ;    bit 0 ; XM module
+    ;    bits 7..1 ; reserved
+    ;    bit 0     ; XM module
 
 
     ORG     .HEADER+100,0       ; 100..127  footer magic string
