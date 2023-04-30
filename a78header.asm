@@ -1,4 +1,4 @@
-  ; A78 Header v4.0
+  ; A78 Header v4.1
   ; 
   ; Use this file to add an a78 header via the source code of your ROM.
   ;
@@ -99,10 +99,12 @@
     ;    9 = Amiga mouse
     ;   10 = AtariVox
     ;   11 = SNES2Atari
+    ;   12 = Mega7800
 
 
     DC.B    %00000000          ; 57         tv type
-    ;    bits 7..2 ; reserved
+    ;    bits 7..3 ; reserved
+    ;    bit  2    ; 0:single-region,1:multi-region
     ;    bit  1    ; 0:component,1:composite
     ;    bit  0    ; 0:NTSC,1:PAL
 
