@@ -1,4 +1,4 @@
-  ; A78 Header v4.1
+  ; A78 Header v4.2
   ; 
   ; Use this file to add an a78 header via the source code of your ROM.
   ;
@@ -167,6 +167,7 @@
 
     DC.B    %00000000          ; 66         audio hi
     DC.B    %00000000          ; 67         audio lo
+    ;    bit  5      ; adpcm@420
     ;    bit  4      ; covox@430
     ;    bit  3      ; ym2151@460
     ;    bits 0-2    ; pokey...
