@@ -66,7 +66,7 @@
     ;    bit 6 ; EXRAM/M2                   (halt banked RAM)
     ;    bit 5 ; BANKSET
     ;    bit 4 ; SOUPER
-    ;    bit 3 ; YM2151 @ $0461 - $0462 
+    ;    bit 3 ; YM2151 @ $0460 - $0461 
     ;    bit 2 ; POKEY @ $0440 - $044F 
     ;    bit 1 ; ABSOLUTE
     ;    bit 0 ; ACTIVISION
@@ -123,7 +123,7 @@
     DC.B    %00000000          ; 62         external irq source
     ;    bits 7..5 ; reserved
     ;    bit  4    ; POKEY  @ $0800 - $080F
-    ;    bit  3    ; YM2151 @ $0461 - $0462
+    ;    bit  3    ; YM2151 @ $0460 - $0461
     ;    bit  2    ; POKEY  @ $0440 - $044F
     ;    bit  1    ; POKEY  @ $0450 - $045F
     ;    bit  0    ; POKEY  @ $4000 - $7FFF
